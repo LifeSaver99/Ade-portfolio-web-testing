@@ -1,24 +1,28 @@
 
-body{
-     background-color: turquoise;
+    body{
+     background-color:aquamarine;
     
 
-}
+    }
+
+    #header{
+        color: blue;
+    }
 
 
-.flex-container{
+    .flex-container{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    padding-inline: 20px;
-}
+    padding-inline: 20px;}
 
- .flex{ 
+
+    .flex{ 
      padding: 20px; 
      color: white; 
- } 
+    } 
 
- .footer {
+    .footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -27,16 +31,23 @@ body{
     background-color:black;
     color: white;
     text-align: center;
-  }
+    }
 
-  #image{
+    #image{
       display: block;
       width: 25%;
       padding-top: 5px;
-  }
+    }
 
-  #form { position:-webkit-sticky; bottom: 0; 
+    #form { position:-webkit-sticky; bottom: 0; 
     scroll-padding-bottom: 0;
-    padding-top: 57%;
+}
+    
+#button{
+    padding-bottom: 1%;
+}
+    
+.hidden{
+    display: none
 }
   

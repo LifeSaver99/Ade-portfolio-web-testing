@@ -1,10 +1,11 @@
-var button = document.querySelector("button");
+// var button = document.querySelector("button");
 
-button.addEventListener("click", function () {
-    document.body.style.backgroundColor = "red";
-});
+// button.addEventListener("click", function () {
+//     document.body.style.backgroundColor = "red";
+// });
 
 // })
+
 
 let myFunction = () => {
     document.getElementById('body').style.backgroundColor = 'red';
@@ -13,18 +14,20 @@ let myFunction = () => {
 // }
 
 function Submit() {
-    alert("Name must be filled out");
+    var form = document.getElementsById('form');
+    form.parentElemement.removeChild(form)
+    alert("form submitted successfully");
     return remove();
 }
 
 // let x = document.forms["myForm"]["fname"].value;
 // if (x == "fname") {
 
-/*remove() {
-    var myobj = document.getElementsByClassName('form1');
+function remove() {
+  
     ;
     return alert('form has been submitted');
-}*/
+}
 /* function changeColor() {
     document.body.style.backgroundColor = 'red';
 }*/
