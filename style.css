@@ -27,10 +27,12 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2%;
+    height: 1%;
     background-color:black;
     color: white;
     text-align: center;
+    clear: both;
+
     }
 
     #image{
@@ -43,11 +45,5 @@
     scroll-padding-bottom: 0;
 }
     
-#button{
-    padding-bottom: 1%;
-}
+
     
-.hidden{
-    display: none
-}
-  

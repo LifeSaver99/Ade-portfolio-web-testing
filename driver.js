@@ -8,10 +8,10 @@ module.exports = (() => {
         // To initialize a 'headless' browser for testing
         headless: async (url) => {
             const headless = new webdriver.Builder().forBrowser('chrome').
-            setChromeOptions(new chrome.Options().headless().
-            setAcceptInsecureCerts(true).
-            windowSize({width: 1920, height: 1200})).
-            build();
+                setChromeOptions(new chrome.Options().headless().
+                    setAcceptInsecureCerts(true).
+                    windowSize({ width: 1920, height: 1200 })).
+                build();
 
             await headless.get(url);
             return headless;
@@ -31,10 +31,28 @@ module.exports = (() => {
             el.click();
         },
 
-        body: async (headless) =>{
+        button2: async (headless) => {
+            const css = webdriver.By.css('#formButton');
+            const el = await headless.findElement(css);
+            el.click();
+        },
+
+
+        body: async (headless) => {
             const css = webdriver.By.css('#body');
             const el = await headless.findElement(css);
             return await el.getCssValue('background-color');
+        },
+
+        form: async (headless) => {
+            const css = webdriver.By.css('#form');
+            try {
+                const el = await headless.findElement(css);
+                return el;
+            } catch (ex) {
+                return null;
+            }
         }
+
     };
 })();

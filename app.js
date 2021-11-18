@@ -10,24 +10,10 @@
 let myFunction = () => {
     document.getElementById('body').style.backgroundColor = 'red';
 }
-// document.getElementById('button').innerHTML.backgroundColor = 'red';
-// }
-
-function Submit() {
-    var form = document.getElementsById('form');
-    form.parentElemement.removeChild(form)
-    alert("form submitted successfully");
-    return remove();
-}
-
-// let x = document.forms["myForm"]["fname"].value;
-// if (x == "fname") {
 
 function remove() {
-  
-    ;
-    return alert('form has been submitted');
+    var form = document.getElementById('form');
+    form.remove();
+    // return alert("form removed successfully");
 }
-/* function changeColor() {
-    document.body.style.backgroundColor = 'red';
-}*/
+
